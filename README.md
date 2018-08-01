@@ -8,8 +8,11 @@ Short descriptions of the files are the following:
 
 SentMap.R: Main code
 ui.R: Specifies the general structure of the shinydashboard (it needs to be saved in the same folder as SentMap.R)
+
 server.R: Plots the element of the shinydashboard (it needs to be saved in the same folder as SentMap.R)
+
 Data: Folder containing the Executive Summaries for every country and year (it is required to run the SentMap.R code)
+
 Metainfo.txt: General Information about authors and project
 
 All analyses are conducted using RStudio.
