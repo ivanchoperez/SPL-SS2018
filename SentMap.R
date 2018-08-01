@@ -3,10 +3,10 @@ setwd("~/Ivan/MSc Statistics/SPL/Project/Final Code")
 
 # The code is divided in the following sections:
 #   Section 1: Data loading (codeline 12)
-#   Section 2: Text cleaning (codeline 61)
-#   Section 3: Sentiment Analysis (codeline 163)
-#   Section 4: Interactive Map (codeline 300)
-#   Section 5: Shiny app (codeline 386)
+#   Section 2: Text cleaning (codeline 57)
+#   Section 3: Sentiment Analysis (codeline 197)
+#   Section 4: Interactive Map (codeline 385)
+#   Section 5: Shiny app (codeline 477)
 
 # -----------------------
 # Section 1: Data loading
