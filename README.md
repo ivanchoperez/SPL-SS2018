@@ -1,4 +1,4 @@
-# SPL-SS2018
+# Sentiment Analysis of European Comission Country Report
 
 In our project, we analyze the country reports of all European countries, published by the European Commission. Our goal is to identify the sentiment of the European Commission about the economic and political state of each European country for the years of 2012, 2015 and 2018. In our case, we focus on the Executive Summary, a short passage of text in the beginning of each report. We use three different dictionaries with different mapping complexities, to gain a broader look on the possibilities of sentiment analysis.
 
