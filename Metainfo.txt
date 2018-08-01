@@ -1,0 +1,29 @@
+Name of Quantlet:  SentMap
+
+ 
+
+Published in:      "Statistical Programming Languages (SS 18)"
+
+  
+
+Description:       „Identify the sentiment of the Executive Summary of the European Commission Country Report“
+
+ 
+
+Keywords:          „sentiment analysis, Shiny Dashboard, NRC lexicon, Syuzhet lexicon, Minqing-Bing dictionary"
+
+
+
+See also :         
+
+
+
+Author:            Anna Bothe, Ivan Perez, Robert Sitner
+
+  
+
+Submitted:         Wed, August 27 2018 by Ivan Perez
+
+  
+
+Datafile:          R file
