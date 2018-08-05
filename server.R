@@ -83,7 +83,7 @@ shinyServer(function(input, output){
         theme_bw() +
         theme(panel.grid = element_blank()) +
         theme(strip.text = element_blank()) +
-        theme(legend.title=element_blank()) +
+        #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_discrete(na.value="grey")
       
@@ -166,7 +166,7 @@ shinyServer(function(input, output){
         theme_bw() +
         theme(panel.grid = element_blank()) + 
         theme(strip.text = element_blank()) +
-        theme(legend.title=element_blank()) +
+        #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_continuous(na.value="grey") + 
         scale_fill_gradient2(low = "red", mid = "green", high = "blue") 
@@ -254,9 +254,8 @@ shinyServer(function(input, output){
   # the frequency of each word
   
   output$wordcloud <- renderWordcloud2({
-  
-  if (input$year == "2012"){
-    
+      
+      if (input$year == "2012") {    
       country_df <- data.frame(unlist(list_2012_cleaned[[input$country]]))
       colnames(country_df) <- c("words")
       words_df <- count(country_df, "words")
@@ -273,7 +272,7 @@ shinyServer(function(input, output){
       words_df <- count(country_df, "words")
       words_df <- words_df[order(words_df$freq, decreasing = T),]
       words_df <- words_df[words_df$freq >= 2,]
-      wordcloud2::wordcloud2(words_df, size = 0.2)
+      wordcloud2::wordcloud2(words_df, size = 0.25)
     }
   
   else if(input$year == "2018"){
@@ -283,7 +282,9 @@ shinyServer(function(input, output){
     words_df <- count(country_df, "words")
     words_df <- words_df[order(words_df$freq, decreasing = T),]
     words_df <- words_df[words_df$freq >= 3,]
-    wordcloud2::wordcloud2(words_df, size = 0.2)
+    wordcloud2::wordcloud2(words_df, size = 0.25)
   }
-  })      
+  })
+    
 })
+
