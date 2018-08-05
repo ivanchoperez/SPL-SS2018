@@ -9,7 +9,7 @@ shinyUI(
     selectInput("dictionary", "Select dictionary",
                 choices = c("NRC", "Minqing", "Sentimentr")),
     selectInput("country", "Select country for wordcloud",
-                choices = c("austria", "belgium", "bulgaria", "croatia", "cyprus",
+                choices = c("austria", "belgium", "bulgaria", "cyprus",
                             "czech republic", "denmark", "estonia", "finland", "france",
                             "germany", "hungary", "ireland", "italy", "latvia", "lithuania",
                             "luxembourg", "malta", "netherlands", "poland", "portugal",
