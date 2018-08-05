@@ -1,12 +1,31 @@
 # Change the following path to the desired one in your computer
-setwd("~/Ivan/MSc Statistics/SPL/Project/Final Code")
+setwd("~/Ivan/MSc Statistics/SPL/Project/Code 16-07-2018/Data")
 
 # The code is divided in the following sections:
-#   Section 1: Data loading (codeline 12)
-#   Section 2: Text cleaning (codeline 57)
-#   Section 3: Sentiment Analysis (codeline 197)
-#   Section 4: Interactive Map (codeline 385)
-#   Section 5: Shiny app (codeline 477)
+#   Section 0: Packages installation (codeline 13)
+#   Section 1: Data loading (codeline 31)
+#   Section 2: Text cleaning (codeline 76)
+#   Section 3: Sentiment Analysis (codeline 211)
+#   Section 4: Interactive Map (codeline 394)
+#   Section 5: Shiny app (codeline 483)
+
+# -------------------------------
+# Section 0: Packages Installation
+# -------------------------------
+
+# List of librries to be used
+lib <- list("NLP", "tm", "syuzhet", "sentimentr", "ggplot2", "dplyr",
+          "shiny", "shinydashboard", "ggiraph", "wordcloud2", "plyr")
+
+# Installing or calling the libraries
+invisible(lapply(lib, function(x){
+  result <- library(x, logical.return=T, character.only =T)
+  if(result == F) install.packages(x)
+  library(x, character.only =T)
+  print(paste0(x, " loaded"))
+}))
+
+rm(lib)
 
 # -----------------------
 # Section 1: Data loading
@@ -16,17 +35,17 @@ setwd("~/Ivan/MSc Statistics/SPL/Project/Final Code")
 
 countries_2012 <- c("austria", "belgium", "bulgaria", "cyprus",
                     "czech republic", "denmark", "estonia", "finland", "france",
-                    "germany", "greece", "hungary", "ireland", "italy", "latvia", "lithuania",
+                    "germany", "hungary", "ireland", "italy", "latvia", "lithuania",
                     "luxembourg", "malta", "netherlands", "poland", "portugal",
                     "romania", "slovakia", "slovenia", "spain", "sweden", "uk")
 
-countries_2015 <- c("austria", "belgium", "bulgaria", "croatia", "cyprus",
+countries_2015 <- c("austria", "belgium", "bulgaria", "cyprus",
                     "czech republic", "denmark", "estonia", "finland", "france",
                     "germany", "hungary", "ireland", "italy", "latvia", "lithuania",
                     "luxembourg", "malta", "netherlands", "poland", "portugal",
                     "romania", "slovakia", "slovenia", "spain", "sweden", "uk")
 
-countries_2018 <- c("austria", "belgium", "bulgaria", "croatia", "cyprus",
+countries_2018 <- c("austria", "belgium", "bulgaria", "cyprus",
                 "czech republic", "denmark", "estonia", "finland", "france",
                 "germany", "hungary", "ireland", "italy", "latvia", "lithuania",
                 "luxembourg", "malta", "netherlands", "poland", "portugal",
@@ -58,11 +77,6 @@ rm(countries_2012, countries_2015, countries_2018, i)
 # ------------------------
 
 # You can run the whole section (it takes about a second)
-
-#install.packages("NLP")
-library(NLP)
-#install.packages("tm")
-library(tm)
 
 # The following loop will create a list with cleaned text for 2012
 list_2012_cleaned = list()
@@ -203,15 +217,12 @@ rm(i)
 # 1) NRC dictionary 
 # for more details: http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm)
 
-# install.packages("syuzhet")
-library(syuzhet)
-
 NRC_2012 = list()
 for (i in 1:length(list_2012_cleaned)){
   # find the NRC sentiments of every country (creates a data frame):
   NRC <- get_nrc_sentiment(list_2012_cleaned[[i]])
   # sum every column of NRC, excluding columns 9 and 10 (positive and negative),
-  # and the compute the maximum of the columnsums, the look for the name of that column,
+  # and then compute the maximum of the columnsums, then look for the name of that column,
   # in other words: return the sentiment with the highest colSums:
   NRC_2012[[i]] <- colnames(NRC[,c(-9,-10)])[which.max(colSums(NRC[,c(-9,-10)]))]
   # Use the corresponding country name: 
@@ -225,7 +236,7 @@ for (i in 1:length(list_2015_cleaned)){
   # find the NRC sentiments of every country (creates a data frame):
   NRC <- get_nrc_sentiment(list_2015_cleaned[[i]])
   # sum every column of NRC, excluding columns 9 and 10 (positive and negative),
-  # and the compute the maximum of the columnsums, the look for the name of that column,
+  # and then compute the maximum of the columnsums, then look for the name of that column,
   # in other words: return the sentiment with the highest colSums:
   NRC_2015[[i]] <- colnames(NRC[,c(-9,-10)])[which.max(colSums(NRC[,c(-9,-10)]))]
   # Use the corresponding country name: 
@@ -235,13 +246,13 @@ for (i in 1:length(list_2015_cleaned)){
   }
 
 
-# # The following loop takes about 15 mins
+# # The following loop takes about 10 mins
 NRC_2018 = list()
 for (i in 1:length(list_2018_cleaned)){
   # find the NRC sentiments of every country (creates a data frame):
   NRC <- get_nrc_sentiment(list_2018_cleaned[[i]])
   # sum every column of NRC, excluding columns 9 and 10 (positive and negative),
-  # and the compute the maximum of the columnsums, the look for the name of that column,
+  # and then compute the maximum of the columnsums, then look for the name of that column,
   # in other words: return the sentiment with the highest colSums:
   NRC_2018[[i]] <- colnames(NRC[,c(-9,-10)])[which.max(colSums(NRC[,c(-9,-10)]))]
   # Use the corresponding country name: 
@@ -249,10 +260,11 @@ for (i in 1:length(list_2018_cleaned)){
   # Print sentiment just to verify the loop is working:
   print(NRC_2018[[i]])
   }
- 
-# save(NRC_2012,file="NRC_2012.Rda")
-# save(NRC_2015,file="NRC_2015.Rda")
-# save(NRC_2018,file="NRC_2018.Rda")
+
+# Save NRC results in case one requires them later 
+#save(NRC_2012,file="NRC_2012.Rda")
+#save(NRC_2015,file="NRC_2015.Rda")
+#save(NRC_2018,file="NRC_2018.Rda")
 
 
 # 2) Minqing-Bing dictionary
@@ -315,19 +327,15 @@ for (i in 1:length(list_2018_cleaned)){
   # Print sentiment just to verify the loop is working:
   print(minqing_2018[[i]])
   }
- 
-# save(minqing_2012,file="minqing_2012.Rda")
-# save(minqing_2015,file="minqing_2015.Rda")
-# save(minqing_2018,file="minqing_2018.Rda")
+
+# Save Minqing results in case one requires them later 
+#save(minqing_2012,file="minqing_2012.Rda")
+#save(minqing_2015,file="minqing_2015.Rda")
+#save(minqing_2018,file="minqing_2018.Rda")
 
  
 # 3) Sentimentr dictionary
  
-#install.packages("sentimentr")
-#install.packages("stringi")
-library(sentimentr)
- 
-
 sentimentr_2012 = list()
 for (i in 1:length(list_2012_cleaned_full)){
   # Apply sentimentr to every sentence of the executive summary:
@@ -364,12 +372,13 @@ for (i in 1:length(list_2018_cleaned_full)){
   print(sentimentr_2018[[i]])
   }
 
-#save(sentimentr_2012,file="sentimentr_2012.Rda")
-#save(sentimentr_2015,file="sentimentr_2015.Rda")
-#save(sentimentr_2018,file="sentimentr_2018.Rda")
+# Save Sentimentr results in case one requires them later 
+# save(sentimentr_2012,file="sentimentr_2012.Rda")
+# save(sentimentr_2015,file="sentimentr_2015.Rda")
+# save(sentimentr_2018,file="sentimentr_2018.Rda")
  
 # remove temporal objects
-rm(NRC, i, start_time, negwords, poswords, score, sent)
+rm(NRC, i, negwords, poswords, score, sent)
 
 load("NRC_2012.Rda")
 load("NRC_2015.Rda")
@@ -436,7 +445,6 @@ rownames(sentimentr_2018_df) <- c()
 colnames(sentimentr_2018_df) <- c("region", "sentimentr_2018")
 
 # Load data for Europe Map
-library(ggplot2)
 global <- map_data("world")
 european_countries <- c("Albania", "Andorra", "Austria", "Belarus",
                  "Belgium", "Bosnia and Herzegovina", "Bulgaria","Croatia","Cyprus",
@@ -455,8 +463,6 @@ global <- global[ind_eur,]
 global$region <- tolower(global$region)
 
 # Merge Sentiment Analysis dataframes with Europe map dataframe
-#install.packages("dplyr")
-library(dplyr)
 
 # It will give some warning messages but not important for our purpouses
 global <- left_join(global, NRC_2012_df, by = "region")
@@ -481,13 +487,7 @@ rm(european_countries, ind_eur)
 # ui.R contains the general structure
 # server.R contains the functionality
 
-library(shiny)
-library(shinydashboard)
-library(ggiraph)
-library(wordcloud2)
-library(plyr)
-
-# Run App in the default browser
+# Run App in the default browser (it could be too small)
 shiny::runApp()
 
 # change the following line to your desired browser (in this case chrome)
