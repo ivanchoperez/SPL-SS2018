@@ -1,4 +1,4 @@
-EXECUTIVE SUMMARY 
+ï»¿EXECUTIVE SUMMARY 
 
 
 
@@ -15,22 +15,22 @@ performing loans. Unemployment is also declining
 but remains high, in a context of weak potential 
 growth. Amid positive macroeconomic 
 developments, a renewed reform momentum in 
-key areas – e.g. the insolvency and foreclosure 
+key areas â€“ e.g. the insolvency and foreclosure 
 frameworks, the judicial system, the business 
 environment, the public sector, education and the 
-labour market – could help improve potential 
+labour market â€“ could help improve potential 
 growth, reduce vulnerabilities and the risk of a 
 slowdown, should the external environment and 
 financial conditions become less supportive. (1) 
 
-(1) This report assesses Cyprus’ economy in the light of the 
-European Commission’s Annual Growth Survey published 
+(1) This report assesses Cyprusâ€™ economy in the light of the 
+European Commissionâ€™s Annual Growth Survey published 
 on 22 November 2017. In the survey, the Commission calls 
 on Member States to implement reforms to make the 
 European economy more productive, resilient and 
 inclusive. In so doing, Member States should focus their 
 efforts on the three elements of the virtuous triangle of 
-economic policy — boosting investment, pursuing 
+economic policy â€” boosting investment, pursuing 
 structural reforms and ensuring responsible fiscal policies. 
 At the same time, the Commission published the Alert 
 Mechanism Report (AMR) that initiated the seventh round 
@@ -55,7 +55,7 @@ decelerate to 3.2 %.
 
 Overall, Cyprus has made limited progress with 
 implementing the 2017 country-specific 
-recommendations. After the government’s 
+recommendations. After the governmentâ€™s 
 adoption and implementation of an ambitious 
 reform agenda during the economic adjustment 
 
@@ -121,7 +121,7 @@ highest in the EU. The debt of non-financial
 corporations and households has decreased to 
 around 250 % of GDP (excluding non-financial 
 SPEs) in 2017Q3, primarily driven by 
-households’ debt reduction. Despite the robust 
+householdsâ€™ debt reduction. Despite the robust 
 recovery, repayment of debt has only 
 marginally improved as contract enforcement 
 remains weak and the use of the insolvency and 
@@ -132,7 +132,7 @@ debt reduction, notably thanks to a prudent
 fiscal stance and active debt management 
 operations. While risks related to high private 
 debt levels in the economy remain significant, 
-they are mitigated by the country’s favourable 
+they are mitigated by the countryâ€™s favourable 
 fiscal position. Cyprus remains vulnerable to 
 external shocks and changes in fiscal stance 
 and economic outlook. Significant reliance on 
@@ -147,7 +147,7 @@ decreased in recent years, but remains largely
 negative at 120.6 % of GDP in 2017Q3. 
 Excluding the external debt of SPEs, the 
 negative NIIP is smaller but still substantial at 
-around 44 % of GDP. This highlights Cyprus’ 
+around 44 % of GDP. This highlights Cyprusâ€™ 
 dependency on foreign financing sources and 
 its vulnerability to shifts in international 
 financial market sentiment. The widening 
@@ -179,21 +179,21 @@ still face challenges as regards performance.
 In 2017, the emergency liquidity assistance was 
 repaid and banks continued to accumulate large 
 liquidity buffers. This behaviour is explained 
-by banks’ reliance on potentially volatile short-
+by banksâ€™ reliance on potentially volatile short-
 term deposits, notably from non-residents. The 
 poor asset quality and the lack of inter-bank 
 markets are hindering wholesale long-term 
 funding and the build-up of loss absorption 
-capacity. Banks’ operational costs remain high. 
+capacity. Banksâ€™ operational costs remain high. 
 Improvements to the governance and 
 administrative capacity of insurance and 
-pension funds’ supervision remain pending. 
+pension fundsâ€™ supervision remain pending. 
 . Inefficiencies in the justice system continue 
 to affect contract enforcement and swift 
 resolution of civil and commercial cases. 
 Cumbersome civil procedures and weak 
 enforcement of court decisions weigh on 
-banks’ incentives to use the insolvency and 
+banksâ€™ incentives to use the insolvency and 
 foreclosure frameworks to reduce their stock of 
 NPLs. A series of reforms have started to 
 address the most critical problems in the justice 
@@ -249,7 +249,7 @@ remain. Poor educational achievements and
 skills mismatches continue to weigh on 
 potential growth. Participation in vocational 
 education and training is low and the reform of 
-the teachers’ evaluation system is still pending. 
+the teachersâ€™ evaluation system is still pending. 
 Recent reforms on the appointment of teachers, 
 curricula and plans to increase vocational 
 education and training capacity are expected to 
@@ -288,7 +288,7 @@ interest and royalty payments by Cyprus
 companies and potential risks associated with 
 the design of notional interest regimes), 
 combined with the lack of some anti-abuse 
-rules, suggest that Cyprus’ corporate income 
+rules, suggest that Cyprusâ€™ corporate income 
 tax rules may still be used in tax avoidance 
 structures. 
 . Inefficiencies in the public sector impact on 

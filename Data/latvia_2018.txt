@@ -1,4 +1,4 @@
-EXECUTIVE SUMMARY 
+ï»¿EXECUTIVE SUMMARY 
 
 
 
@@ -18,20 +18,20 @@ efficiency of public services. Moreover, the high
 inequality and a number of social challenges 
 reflect the weak social protection in Latvia (1). 
 
-(1) This report assesses Latvia’s economy in the light of the 
-European Commission’s Annual Growth Survey published 
+(1) This report assesses Latviaâ€™s economy in the light of the 
+European Commissionâ€™s Annual Growth Survey published 
 on 22 November 2017. In the survey, the Commission calls 
 on EU Member States to implement reforms to make the 
 European economy more productive, resilient and 
 inclusive. In so doing, Member States should focus their 
 efforts on the three elements of the virtuous triangle of 
-economic policy — boosting investment, pursuing 
+economic policy â€” boosting investment, pursuing 
 structural reforms and ensuring responsible fiscal policies. 
 
  
 
 An improving external outlook coupled with 
-recovering investment has pushed Latvia’s real 
+recovering investment has pushed Latviaâ€™s real 
 GDP growth above 4% in 2017. Real GDP 
 growth is forecast to have reached 4.5 %, double 
 the 2016 figure and the highest GDP growth since 
@@ -64,14 +64,14 @@ been more or less uniform across skill levels, but
 large regional differences and skill-level gaps in 
 employment opportunities exist. The large 
 difference between the net income of low-wage 
-earners and the total cost for employers (‘the high 
-tax wedge’) is dampening labour supply while the 
+earners and the total cost for employers (â€˜the high 
+tax wedgeâ€™) is dampening labour supply while the 
 lack of affordable housing makes it hard for people 
 to move to find work. 
 
 The population decline increasingly weighs on 
 the efficiency of several areas of the economy 
-and social policy. Latvia’s population has been 
+and social policy. Latviaâ€™s population has been 
 falling since the early 1990s, caused by a negative 
 natural change and sizeable emigration. Over the 
 past decade, however, the pace of decline has 
@@ -93,12 +93,12 @@ halved compared to what it was during the fast
 catching-up process before the crisis. The 
 structurally lower investment rate suggests that 
 there is no low hanging fruit left and that the 
-country’s growth model will need to change by 
+countryâ€™s growth model will need to change by 
 shifting the focus to climbing the global value 
 chains. However, weak innovation performance, 
 average education outcomes and a diminishing 
 talent pool due to emigration raise concerns about 
-the economy’s ability to expand its share of 
+the economyâ€™s ability to expand its share of 
 knowledge-intensive activities. 
 
 Despite some recent improvements, persistently 
@@ -259,7 +259,7 @@ voluntary health contributions. As a result, part
 of population stand to lose access to the full 
 basket of healthcare services. 
 . Rapidly rising labour costs raise some 
-concerns about Latvia’s price 
+concerns about Latviaâ€™s price 
 competitiveness. Despite rapid wage growth, 
 Latvia has continued to gain export market 
 shares. Crucially, unlike during the period 
@@ -279,7 +279,7 @@ population have helped productivity growth in
 Latvia. However, the low investments in R&D, 
 the overall weak innovation performance and 
 average education outcomes undermine 
-Latvia’s pursuit of higher productivity through 
+Latviaâ€™s pursuit of higher productivity through 
 specialisation in knowledge-intensive 
 activities. 
 . Latvia has taken steps to reduce the burden 

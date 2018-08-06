@@ -1,4 +1,4 @@
-EXECUTIVE SUMMARY 
+ï»¿EXECUTIVE SUMMARY 
 
 
 
@@ -29,14 +29,14 @@ improving collaboration between public research
 and companies would contribute to increase the 
 competitiveness of the French economy. 
 
-(1) This report assesses France’s economy in the light of the 
-European Commission’s Annual Growth Survey published 
+(1) This report assesses Franceâ€™s economy in the light of the 
+European Commissionâ€™s Annual Growth Survey published 
 on 22 November 2017. In the survey, the Commission calls 
 on EU Member States to implement reforms to make the 
 European economy more productive, resilient and 
 inclusive. In so doing, Member States are encouraged to 
 focus on the three elements of the virtuous triangle of 
-economic policy — boosting investment, pursuing 
+economic policy â€” boosting investment, pursuing 
 structural reforms, and ensuring responsible fiscal policies. 
 At the same time, the Commission published the Alert 
 Mechanism Report (AMR) that initiated the seventh round 
@@ -62,7 +62,7 @@ sustained global demand.
 The performance of French exports has stopped 
 deteriorating. Export market shares have 
 stabilised since 2012, led by more favourable 
-developments in France’s main trade partners. The 
+developments in Franceâ€™s main trade partners. The 
 trade deficit is expected to have reached a trough 
 in 2017, as imports remained more vigorous than 
 exports and oil prices rebounded. External 
@@ -71,9 +71,9 @@ short term, whilst the weak export performance
 continues to weigh on growth prospects. 
 
 In the long term, growth is expected to remain 
-moderate. In line with an EU-wide trend, France’s 
+moderate. In line with an EU-wide trend, Franceâ€™s 
 potential growth has been eroded since the 2008 
-financial crisis. Yet, France’s potential growth 
+financial crisis. Yet, Franceâ€™s potential growth 
 increased to 1.0 % in 2016 and is expected to 
 further accelerate, up to 1.3 % in 2019. Structural 
 reforms have been planned and some have already 
@@ -93,7 +93,7 @@ economy, including product market reforms. The
 positive effect of these actions is likely to become 
 more prominent in the medium term. 
 
-France’s public indebtedness is high. The 
+Franceâ€™s public indebtedness is high. The 
 general government deficit is expected to decline 
 below the threshold value of 3 % of GDP in 2017. 
 However, the adjustment of government spending 
@@ -107,8 +107,8 @@ structural savings are still unknown. In turn,
 targets for healthcare spending (ONDAM) and 
 operational spending of local authorities 
 (ODEDEL) are less demanding for 2018. As a 
-result, it seems that France currently plans to ‘back 
-load’ the envisaged consolidation effort by cutting 
+result, it seems that France currently plans to â€˜back 
+loadâ€™ the envisaged consolidation effort by cutting 
 spending in later years. 
 
 
@@ -186,7 +186,7 @@ measures have reduced labour costs. However,
 the competitiveness gap accumulated in 
 previous years has not been closed yet. 
 . Other factors driving the competitiveness of 
-French exports continue to be weak. France’s 
+French exports continue to be weak. Franceâ€™s 
 share of the global market has been more 
 resilient for services than goods since 2008, 
 especially for business services. The share of 
@@ -226,11 +226,11 @@ companies are still facing fast changing
 legislation, complex regulatory requirements 
 and burdensome administrative procedures. 
 Size-related regulatory thresholds continue to 
-weigh on firms’ growth. Competition is still 
+weigh on firmsâ€™ growth. Competition is still 
 weak in several service sectors, notably in 
 professional and business services. Lack of 
 clarity and prioritisation about the French 
-state’s objectives as shareholder in several 
+stateâ€™s objectives as shareholder in several 
 large incumbent firms operating in sectors of 
 major economic importance remains, including 
 railways and energy. The new regulatory 
@@ -281,7 +281,7 @@ on production.
 
 
 Other key structural issues analysed in this report, 
-which point to particular challenges for France’s 
+which point to particular challenges for Franceâ€™s 
 economy, are the following: 
 
 . Educational inequalities remain high and 

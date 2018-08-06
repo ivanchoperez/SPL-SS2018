@@ -1,8 +1,8 @@
-EXECUTIVE SUMMARY 
+ï»¿EXECUTIVE SUMMARY 
 
 
 
-Italy’s ongoing recovery offers a window of 
+Italyâ€™s ongoing recovery offers a window of 
 opportunity to boost the reform momentum. By 
 fully implementing already adopted measures and 
 completing key reforms in the pipeline, Italy could 
@@ -11,19 +11,19 @@ productivity. This would reduce the risk of a
 slowdown, should the external environment and 
 financial conditions become less supportive. In 
 particular, Italy's resilience could be helped by 
-improving the business environment — notably by 
+improving the business environment â€” notably by 
 reforming the judicial process and the insolvency 
-and taxation frameworks — and strengthening the 
+and taxation frameworks â€” and strengthening the 
 banking system and the labour market. (1) 
 
-(1) This report assesses Italy’s economy in the light of the 
-European Commission’s Annual Growth Survey published 
+(1) This report assesses Italyâ€™s economy in the light of the 
+European Commissionâ€™s Annual Growth Survey published 
 on 22 November 2017. In the survey, the Commission calls 
 on EU Member States to implement reforms to make the 
 European economy more productive, resilient and 
 inclusive. In so doing, Member States are encouraged to 
 focus on the three elements of the virtuous triangle of 
-economic policy — boosting investment, pursuing 
+economic policy â€” boosting investment, pursuing 
 structural reforms and ensuring responsible fiscal policies. 
 At the same time, the Commission published the Alert 
 Mechanism Report (AMR) that initiated the seventh round 
@@ -34,7 +34,7 @@ presented in this report.
 Italy's recovery has strengthened. Supported by 
 the accommodative monetary policy stance of the 
 European Central Bank (ECB) and buoyant 
-external demand, Italy’s real GDP growth is 
+external demand, Italyâ€™s real GDP growth is 
 projected at 1.5 % in both 2017 and 2018. It is 
 expected to slow to 1.2 % in 2019. Rising demand 
 and favourable financing conditions have started to 
@@ -64,15 +64,15 @@ maintains strong financial linkages to other euro
 area countries. 
 
 Long-standing structural weaknesses and 
-regional disparities continue to weigh on Italy’s 
+regional disparities continue to weigh on Italyâ€™s 
 growth potential. Despite the recent recovery, 
-Italy’s real GDP is still below its pre-crisis peak 
+Italyâ€™s real GDP is still below its pre-crisis peak 
 and growing at a slower pace than in peer euro 
 area economies. Regional differences persist both 
 in economic prospects and employment growth. 
 Long-term and youth unemployment remain very 
 high. While the recovery has slightly reduced the 
-headline deficit, Italy’s public debt has continued 
+headline deficit, Italyâ€™s public debt has continued 
 to grow and is set to have peaked at 132.1 % of 
 GDP in 2017. Despite historically low financing 
 costs, private sector credit growth is still muted. 
@@ -123,7 +123,7 @@ The main findings of the in-depth review
 contained in this report, and the related policy 
 challenges, are as follows. 
 
-. Italy’s high public debt remains a major 
+. Italyâ€™s high public debt remains a major 
 vulnerability. The public debt-to-GDP ratio is 
 forecast to stabilise at around 130 % of GDP 
 over 2017-2019. Still low but rising inflation, 
@@ -143,7 +143,7 @@ and adverse demographic trends. Overall, risks
 may emerge if the current accommodative 
 monetary policy stance were to be reversed. 
 . Productivity growth still remains weak. 
-Italy’s productivity growth has been sluggish 
+Italyâ€™s productivity growth has been sluggish 
 over the past two decades due to persistently 
 stagnant total factor productivity and low 
 investment including in education and 
@@ -164,12 +164,12 @@ The number of new non-performing loans has
 declined to pre-crisis levels and the stock has 
 decreased markedly over the recent period. 
 Yet, it remains high compared to EU peers and 
-continues to weigh on banks’ profitability and 
+continues to weigh on banksâ€™ profitability and 
 on their ability to raise capital internally and to 
 efficiently (re)allocate it to the most productive 
-firms. Building on adopted measures — like 
+firms. Building on adopted measures â€” like 
 the guarantee scheme to support NPL 
-securitisations — the pursuit of further efforts 
+securitisations â€” the pursuit of further efforts 
 could help to address the remaining 
 vulnerabilities. The reform of the insolvency 
 framework, in particular, is yet to be finalised. 
@@ -190,7 +190,7 @@ that point to challenges for Italy are the following:
 . A high tax burden and low tax compliance 
 continue to hold back economic growth. 
 Despite extended tax incentives to promote 
-employment and investment, Italy’s tax burden 
+employment and investment, Italyâ€™s tax burden 
 on labour and capital remains among the 
 highest in the EU. Efforts to shift it to property 
 and consumption are still limited. The 
@@ -220,21 +220,21 @@ drain and limited lifelong learning. The
 
 business environment is still unfavourable to 
 investment despite ongoing policies such as the 
-‘Industria 4.0’ to promote business investment. 
-Investment in ‘intangible’ assets such as R&D, 
+â€˜Industria 4.0â€™ to promote business investment. 
+Investment in â€˜intangibleâ€™ assets such as R&D, 
 innovation and training of workers remains 
 below the EU average due to the large number 
 of micro-firms, Italy's lack of specialisation in 
 knowledge-intensive sectors, limited 
 digitisation and digital skills. Moreover, public 
 spending in R&D has been reduced. 
-. ‘Second-level’ wage bargaining is not 
+. â€˜Second-levelâ€™ wage bargaining is not 
 widespread and the implementation of the 
 active labour market policies (ALMPs) 
 reform is delayed. Despite recent labour 
-market reforms, limited use of ‘second-level’ 
-wage bargaining — at regional, sectoral or 
-company level — may weaken the link 
+market reforms, limited use of â€˜second-levelâ€™ 
+wage bargaining â€” at regional, sectoral or 
+company level â€” may weaken the link 
 between wage levels and local economic 
 conditions, thereby reducing competitiveness. 
 Moreover, while a dedicated agency to reform 
@@ -253,7 +253,7 @@ migrants. In response, the design of a new
 permanent scheme to tackle poverty represents 
 a major breakthrough, which could also help 
 reinforce so far understaffed social services. 
-Moreover, Italy’s low fertility rate, ageing 
+Moreover, Italyâ€™s low fertility rate, ageing 
 population and worsened migration balance 
 raise medium-term challenges. These require 
 the development of long term strategies such as 
@@ -269,7 +269,7 @@ by certain aspects of the tax and benefits
 system. The currently fragmented system of 
 bonuses to support families appears to be 
 ineffective in addressing these challenges. 
-. The education system is underfunded. Italy’s 
+. The education system is underfunded. Italyâ€™s 
 early school leaving rate remains above the EU 
 average and wide regional disparities persist in 
 educational attainment despite an overall 
