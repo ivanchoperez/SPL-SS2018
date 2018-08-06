@@ -14,8 +14,9 @@ setwd("~/Ivan/MSc Statistics/SPL/Project/Code 16-07-2018/Data")
 # -------------------------------
 
 # List of librries to be used
-lib <- list("NLP", "tm", "syuzhet", "sentimentr", "ggplot2", "dplyr",
-          "shiny", "shinydashboard", "ggiraph", "wordcloud2", "plyr")
+lib <- list("NLP", "tm", "syuzhet", "sentimentr", "ggplot2",  "plyr", "dplyr",
+          "shiny", "shinydashboard", "ggiraph", "wordcloud2"
+           )
 
 # Installing or calling the libraries
 invisible(lapply(lib, function(x){
