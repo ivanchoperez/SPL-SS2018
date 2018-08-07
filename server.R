@@ -1,4 +1,4 @@
-# The main result of this code are two outputs:
+# The main results of this code are two outputs:
 # 1.The output$map element
 # 2.The output$wordcloud element
 
@@ -8,7 +8,7 @@ shinyServer(function(input, output){
   # 1.The output$map element:
   # this element is a ggplot map that varies depending on the conditionals
   # In every conditional 3 objects change:
-  # a. the global$oc2 column which is the link to the Country Report
+  # a. the global$oc2 column which is the link to the Country Report when clicking
   # b. The sentiment (which is stored in the global data frame)
   # c. The ggplot map (changes depending on the sentiments)
   # At the end the final ggplot is used in the ggiraph function to turn it interactive
@@ -113,7 +113,7 @@ shinyServer(function(input, output){
         #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_continuous(na.value="grey") +
-        scale_fill_gradient2(low = "red", mid = "green", high = "blue")
+        scale_fill_gradient2(low = "yellow", mid = "red", high = "green")
             
     }
     
@@ -141,7 +141,7 @@ shinyServer(function(input, output){
         #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_continuous(na.value="grey") +
-        scale_fill_gradient2(low = "red", mid = "green", high = "blue")       
+        scale_fill_gradient2(low = "yellow", mid = "red", high = "green")       
     }
     
     
@@ -169,7 +169,7 @@ shinyServer(function(input, output){
         #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_continuous(na.value="grey") + 
-        scale_fill_gradient2(low = "red", mid = "green", high = "blue") 
+        scale_fill_gradient2(low = "yellow", mid = "red", high = "green") 
       
     }
     
@@ -194,7 +194,7 @@ shinyServer(function(input, output){
         #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_continuous(na.value="grey") +
-        scale_fill_gradient2(low = "red", mid = "green", high = "blue")
+        scale_fill_gradient2(low = "yellow", mid = "red", high = "green")
     }
     
     else if(input$year == "2015" & input$dictionary == "Sentimentr"){
@@ -217,7 +217,7 @@ shinyServer(function(input, output){
         #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_continuous(na.value="grey") +
-        scale_fill_gradient2(low = "red", mid = "green", high = "blue")
+        scale_fill_gradient2(low = "yellow", mid = "red", high = "green")
     }
     
     
@@ -241,7 +241,7 @@ shinyServer(function(input, output){
         #theme(legend.title=element_blank()) +
         theme(title = element_text(face = "bold")) +
         scale_fill_continuous(na.value="grey") +
-        scale_fill_gradient2(low = "red", mid = "green", high = "blue")
+        scale_fill_gradient2(low = "yellow", mid = "red", high = "green")
     }
     
     ggiraph(ggobj = gg2, selection_type = "none")
@@ -255,35 +255,103 @@ shinyServer(function(input, output){
   
   output$wordcloud <- renderWordcloud2({
       
-      if (input$year == "2012") {    
+    # Bigger size wordcloud 2012
+      if (input$year == "2012" & input$country %in% c("czech republic",
+                                                      "france",
+                                                      "germany",
+                                                      "italy",
+                                                      "netherland",
+                                                      "portugal", 
+                                                      "slovakia",
+                                                      "uk")) {    
       country_df <- data.frame(unlist(list_2012_cleaned[[input$country]]))
       colnames(country_df) <- c("words")
-      words_df <- count(country_df, "words")
+      words_df <- plyr::count(country_df, "words")
       words_df <- words_df[order(words_df$freq, decreasing = T),]
       words_df <- words_df[words_df$freq >= 1,]
-      wordcloud2::wordcloud2(words_df, size = 0.2)
+      wordcloud2::wordcloud2(words_df, size = 0.3)
     
   }
-  
-  else if(input$year == "2015"){
+    
+    # Normal size wordcloud 2012
+    else if(input$year == "2012" & !(input$country %in% c("czech republic",
+                                                          "france",
+                                                          "germany",
+                                                          "italy",
+                                                          "netherland",
+                                                          "portugal", 
+                                                          "slovakia",
+                                                          "uk"))){
+      
+      country_df <- data.frame(unlist(list_2015_cleaned[[input$country]]))
+      colnames(country_df) <- c("words")
+      words_df <- plyr::count(country_df, "words")
+      words_df <- words_df[order(words_df$freq, decreasing = T),]
+      words_df <- words_df[words_df$freq >= 2,]
+      wordcloud2::wordcloud2(words_df, size = 0.22)
+    }
+      
+    # Bigger size wordcloud 2015
+  else if(input$year == "2015" & input$country %in% c("belgium",
+                                                      "france",
+                                                      "germany",
+                                                      "ireland",
+                                                      "italy",
+                                                      "netherlands",
+                                                      "poland",
+                                                      "slovakia",
+                                                      "slovenia")){
     
       country_df <- data.frame(unlist(list_2015_cleaned[[input$country]]))
       colnames(country_df) <- c("words")
-      words_df <- count(country_df, "words")
+      words_df <- plyr::count(country_df, "words")
       words_df <- words_df[order(words_df$freq, decreasing = T),]
       words_df <- words_df[words_df$freq >= 2,]
-      wordcloud2::wordcloud2(words_df, size = 0.25)
+      wordcloud2::wordcloud2(words_df, size = 0.32)
     }
   
-  else if(input$year == "2018"){
+    # Normal size wordcloud 2015
+    else if(input$year == "2015" & !(input$country %in% c("belgium",
+                                                          "france",
+                                                          "germany",
+                                                          "ireland",
+                                                          "italy",
+                                                          "netherlands",
+                                                          "poland",
+                                                          "slovakia",
+                                                          "slovenia"))){
+      
+      country_df <- data.frame(unlist(list_2015_cleaned[[input$country]]))
+      colnames(country_df) <- c("words")
+      words_df <- plyr::count(country_df, "words")
+      words_df <- words_df[order(words_df$freq, decreasing = T),]
+      words_df <- words_df[words_df$freq >= 2,]
+      wordcloud2::wordcloud2(words_df, size = 0.22)
+    }  
+    
+  # Bigger size wordcloud 2018  
+  else if(input$year == "2018" & input$country %in% c("estonia",
+                                                      "germany")){
     
     country_df <- data.frame(unlist(list_2018_cleaned[[input$country]]))
     colnames(country_df) <- c("words")
-    words_df <- count(country_df, "words")
+    words_df <- plyr::count(country_df, "words")
     words_df <- words_df[order(words_df$freq, decreasing = T),]
     words_df <- words_df[words_df$freq >= 3,]
-    wordcloud2::wordcloud2(words_df, size = 0.25)
+    wordcloud2::wordcloud2(words_df, size = 0.32)
   }
+    # Normal size wordcloud 2018
+    else if(input$year == "2018" & !(input$country %in% c("estonia",
+                                                        "germany"))){
+      
+      country_df <- data.frame(unlist(list_2018_cleaned[[input$country]]))
+      colnames(country_df) <- c("words")
+      words_df <- plyr::count(country_df, "words")
+      words_df <- words_df[order(words_df$freq, decreasing = T),]
+      words_df <- words_df[words_df$freq >= 3,]
+      wordcloud2::wordcloud2(words_df, size = 0.25)
+    }
+      
   })
     
 })
