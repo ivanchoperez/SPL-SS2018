@@ -1,22 +1,22 @@
 # Change the following path to the desired one in your computer
 setwd("~/Ivan/MSc Statistics/SPL/Project/Code 16-07-2018/Data")
 
+
 # The code is divided in the following sections:
-#   Section 0: Packages installation (codeline 13)
-#   Section 1: Data loading (codeline 31)
-#   Section 2: Text cleaning (codeline 76)
-#   Section 3: Sentiment Analysis (codeline 211)
-#   Section 4: Interactive Map (codeline 394)
-#   Section 5: Shiny app (codeline 483)
+#   Section 0: Packages installation (codeline 14)
+#   Section 1: Data loading (codeline 32)
+#   Section 2: Text cleaning (codeline 83)
+#   Section 3: Sentiment Analysis (codeline 218)
+#   Section 4: Interactive Map (codeline 401)
+#   Section 5: Shiny app (codeline 490)
 
 # -------------------------------
-# Section 0: Packages Installation
+# Section 0: Package Installation
 # -------------------------------
 
 # List of librries to be used
-lib <- list("NLP", "tm", "syuzhet", "sentimentr", "ggplot2",  "plyr", "dplyr",
-          "shiny", "shinydashboard", "ggiraph", "wordcloud2"
-           )
+lib <- list("NLP", "tm", "syuzhet", "sentimentr", "ggplot2", "dplyr",
+          "shiny", "shinydashboard", "ggiraph", "wordcloud2", "plyr")
 
 # Installing or calling the libraries
 invisible(lapply(lib, function(x){
@@ -55,19 +55,25 @@ countries_2018 <- c("austria", "belgium", "bulgaria", "cyprus",
 list_2012 = list()
 for (i in 1:length(countries_2012)){
   # Read executive summaries from 2012
-  list_2012[[countries_2012[i]]] <- paste(readLines(paste0(countries_2012[i],"_","2012",".txt")), collapse = " ")
+  list_2012[[countries_2012[i]]] <- paste(
+    readLines(paste0(countries_2012[i],"_","2012",".txt")), 
+                                          collapse = " ")
 }
 
 list_2015 = list()
 for (i in 1:length(countries_2015)){
   # Read executive summaries from 2015
-  list_2015[[countries_2015[i]]] <- paste(readLines(paste0(countries_2015[i],"_","2015",".txt")), collapse = " ")
+  list_2015[[countries_2015[i]]] <- paste(
+    readLines(paste0(countries_2015[i],"_","2015",".txt")),
+                                           collapse = " ")
 }
 
 list_2018 = list()
 for (i in 1:length(countries_2018)){
   # Read executive summaries from 2018
-  list_2018[[countries_2018[i]]] <- paste(readLines(paste0(countries_2018[i],"_","2018",".txt")), collapse = " ")
+  list_2018[[countries_2018[i]]] <- paste(
+    readLines(paste0(countries_2018[i],"_","2018",".txt"))
+                                          , collapse = " ")
 }
 
 # remove temporal objects
@@ -484,9 +490,15 @@ rm(european_countries, ind_eur)
 # Section 5: Shiny App
 # --------------------
 
+# Reconmendations before runing the App:
+
 # The code for the Shiny App is on the files named ui.R and server.R
 # ui.R contains the general structure
 # server.R contains the functionality
+# Those files need to be saved in the current directory (codeline 2)
+
+# To better visualize the App it is reconmended to select the option
+# "Run External" next to the button called "Run App"
 
 # Run App in the default browser (it could be too small)
 shiny::runApp()
