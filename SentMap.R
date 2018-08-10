@@ -498,12 +498,8 @@ rm(european_countries, ind_eur)
 # Those files need to be saved in the current directory (codeline 2)
 
 # To better visualize the App it is reconmended to select the option
-# "Run External" next to the button called "Run App"
+# "Run External" next to the button called "Run App", then run the following line:
 
 # Run App in the default browser (it could be too small)
 shiny::runApp()
 
-# change the following line to your desired browser (in this case chrome)
-chrome <- "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
-options(browser = chrome)
-shiny::runApp("./", launch.browser = TRUE)
