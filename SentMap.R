@@ -7,8 +7,8 @@ setwd("~/Ivan/MSc Statistics/SPL/Project/Code 16-07-2018/Data")
 #   Section 1: Data loading (codeline 32)
 #   Section 2: Text cleaning (codeline 83)
 #   Section 3: Sentiment Analysis (codeline 218)
-#   Section 4: Interactive Map (codeline 401)
-#   Section 5: Shiny app (codeline 490)
+#   Section 4: Interactive Map (codeline 402)
+#   Section 5: Shiny app (codeline 491)
 
 # -------------------------------
 # Section 0: Package Installation
@@ -387,6 +387,7 @@ for (i in 1:length(list_2018_cleaned_full)){
 # remove temporal objects
 rm(NRC, i, negwords, poswords, score, sent)
 
+# Final Sentiment Analysis results can be directly uploaded when needed
 load("NRC_2012.Rda")
 load("NRC_2015.Rda")
 load("NRC_2018.Rda")
@@ -500,6 +501,8 @@ rm(european_countries, ind_eur)
 # To better visualize the App it is reconmended to select the option
 # "Run External" next to the button called "Run App", then run the following line:
 
+
 # Run App in the default browser (it could be too small)
 shiny::runApp()
+
 
