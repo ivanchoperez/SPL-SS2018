@@ -502,7 +502,7 @@ rm(european_countries, ind_eur)
 # "Run External" next to the button called "Run App", then run the following line:
 
 
-# Run App in the default browser (it could be too small)
+# Run App in the default browser
 shiny::runApp()
 
 
