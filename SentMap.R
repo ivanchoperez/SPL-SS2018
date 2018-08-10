@@ -6,9 +6,9 @@ setwd("~/Ivan/MSc Statistics/SPL/Project/Code 16-07-2018/Data")
 #   Section 0: Packages installation (codeline 14)
 #   Section 1: Data loading (codeline 32)
 #   Section 2: Text cleaning (codeline 83)
-#   Section 3: Sentiment Analysis (codeline 218)
-#   Section 4: Interactive Map (codeline 402)
-#   Section 5: Shiny app (codeline 491)
+#   Section 3: Sentiment Analysis (codeline 221)
+#   Section 4: Interactive Map (codeline 405)
+#   Section 5: Shiny app (codeline 509)
 
 # -------------------------------
 # Section 0: Package Installation
@@ -112,10 +112,11 @@ for (i in 1:length(list_2012)){
 
 # The following loop is the same as previous but text is not divided
 # into separate words, instead it is treated as a single observation
-# as some disctionaries require the whole text
+# because some dictionaries require the whole text
 list_2012_cleaned_full = list()
 for (i in 1:length(list_2012)){
-  list_2012_cleaned_full[[i]] <- gsub(pattern = "\\d", replace=" ", list_2012[[i]])
+  list_2012_cleaned_full[[i]] <- gsub(pattern = "\\W", replace=" ", list_2012[[i]])
+  list_2012_cleaned_full[[i]] <- gsub(pattern = "\\d", replace=" ", list_2012_cleaned_full[[i]])
   list_2012_cleaned_full[[i]] <- tolower(list_2012_cleaned_full[[i]])
   list_2012_cleaned_full[[i]] <- removeWords(list_2012_cleaned_full[[i]], stopwords())
   list_2012_cleaned_full[[i]] <- removeWords(list_2012_cleaned_full[[i]], names(list_2012)[i])
@@ -154,10 +155,11 @@ for (i in 1:length(list_2015)){
 
 # The following loop is the same as previous but text is not divided
 # into separate words, instead it is treated as a single observation
-# as some disctionaries require the whole text
+# because some dictionaries require the whole text
 list_2015_cleaned_full = list()
 for (i in 1:length(list_2015)){
-  list_2015_cleaned_full[[i]] <- gsub(pattern = "\\d", replace=" ", list_2015[[i]])
+  list_2015_cleaned_full[[i]] <- gsub(pattern = "\\W", replace=" ", list_2015[[i]])
+  list_2015_cleaned_full[[i]] <- gsub(pattern = "\\d", replace=" ", list_2015_cleaned_full[[i]])
   list_2015_cleaned_full[[i]] <- tolower(list_2015_cleaned_full[[i]])
   list_2015_cleaned_full[[i]] <- removeWords(list_2015_cleaned_full[[i]], stopwords())
   list_2015_cleaned_full[[i]] <- removeWords(list_2015_cleaned_full[[i]], names(list_2015)[i])
@@ -197,10 +199,11 @@ for (i in 1:length(list_2018)){
 
 # The following loop is the same as previous but text is not divided
 # into separate words, instead it is treated as a single observation
-# as some disctionaries require the whole text
+# because some dictionaries require the whole text
 list_2018_cleaned_full = list()
 for (i in 1:length(list_2018)){
-  list_2018_cleaned_full[[i]] <- gsub(pattern = "\\d", replace=" ", list_2018[[i]])
+  list_2018_cleaned_full[[i]] <- gsub(pattern = "\\W", replace=" ", list_2018[[i]])
+  list_2018_cleaned_full[[i]] <- gsub(pattern = "\\d", replace=" ", list_2018_cleaned_full[[i]])
   list_2018_cleaned_full[[i]] <- tolower(list_2018_cleaned_full[[i]])
   list_2018_cleaned_full[[i]] <- removeWords(list_2018_cleaned_full[[i]], stopwords())
   list_2018_cleaned_full[[i]] <- removeWords(list_2018_cleaned_full[[i]], names(list_2018)[i])
@@ -269,9 +272,9 @@ for (i in 1:length(list_2018_cleaned)){
   }
 
 # Save NRC results in case one requires them later 
-#save(NRC_2012,file="NRC_2012.Rda")
-#save(NRC_2015,file="NRC_2015.Rda")
-#save(NRC_2018,file="NRC_2018.Rda")
+# save(NRC_2012,file="NRC_2012.Rda")
+# save(NRC_2015,file="NRC_2015.Rda")
+# save(NRC_2018,file="NRC_2018.Rda")
 
 
 # 2) Minqing-Bing dictionary
@@ -336,9 +339,9 @@ for (i in 1:length(list_2018_cleaned)){
   }
 
 # Save Minqing results in case one requires them later 
-#save(minqing_2012,file="minqing_2012.Rda")
-#save(minqing_2015,file="minqing_2015.Rda")
-#save(minqing_2018,file="minqing_2018.Rda")
+# save(minqing_2012,file="minqing_2012.Rda")
+# save(minqing_2015,file="minqing_2015.Rda")
+# save(minqing_2018,file="minqing_2018.Rda")
 
  
 # 3) Sentimentr dictionary
