@@ -222,7 +222,7 @@ rm(i)
 # -----------------------------
 
 # Running the Whole section will take about 20 mins (8GB Ram).
-# You can skip the process and upload the data directly by going to line 374 instead
+# You can skip the process and upload the data directly by going to line 394 instead
 
 # 1) NRC dictionary 
 # for more details: http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm)
