@@ -1,14 +1,15 @@
 # Change the following path to the desired one in your computer
 setwd("~/Ivan/MSc Statistics/SPL/Project/Code 16-07-2018/Data")
 
+# In line 495 all the revelant objects can be uploaded if needed
 
 # The code is divided in the following sections:
-#   Section 0: Packages installation (codeline 14)
-#   Section 1: Data loading (codeline 32)
-#   Section 2: Text cleaning (codeline 83)
-#   Section 3: Sentiment Analysis (codeline 221)
-#   Section 4: Interactive Map (codeline 405)
-#   Section 5: Shiny app (codeline 509)
+#   Section 0: Packages installation (codeline 15)
+#   Section 1: Data loading (codeline 33)
+#   Section 2: Text cleaning (codeline 84)
+#   Section 3: Sentiment Analysis (codeline 231)
+#   Section 4: Interactive Map (codeline 404)
+#   Section 5: Shiny app (codeline 515)
 
 # -------------------------------
 # Section 0: Package Installation
@@ -217,12 +218,21 @@ for (i in 1:length(list_2018)){
 # remove temporal objects
 rm(i)
 
+# Save cleaned text in case one requires them later 
+# save(list_2012_cleaned, file = "list_2012_cleaned.Rda")
+# save(list_2012_cleaned_full, file = "list_2012_cleaned_full.Rda")
+# save(list_2015_cleaned, file = "list_2015_cleaned.Rda")
+# save(list_2015_cleaned_full, file = "list_2015_cleaned_full.Rda")
+# save(list_2018_cleaned, file = "list_2018_cleaned.Rda")
+# save(list_2018_cleaned_full, file = "list_2018_cleaned_full.Rda")
+
+
 # -----------------------------
 # Section 3: Sentiment Analysis
 # -----------------------------
 
 # Running the Whole section will take about 20 mins (8GB Ram).
-# You can skip the process and upload the data directly by going to line 394 instead
+# You can skip the process and upload the data directly by going to line 495 instead
 
 # 1) NRC dictionary 
 # for more details: http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm)
@@ -390,17 +400,6 @@ for (i in 1:length(list_2018_cleaned_full)){
 # remove temporal objects
 rm(NRC, i, negwords, poswords, score, sent)
 
-# Final Sentiment Analysis results can be directly uploaded when needed
-load("NRC_2012.Rda")
-load("NRC_2015.Rda")
-load("NRC_2018.Rda")
-load("minqing_2012.Rda")
-load("minqing_2015.Rda")
-load("minqing_2018.Rda")
-load("sentimentr_2012.Rda")
-load("sentimentr_2015.Rda")
-load("sentimentr_2018.Rda")
-
 # --------------------------
 # Section 4: Interactive Map
 # --------------------------
@@ -490,6 +489,28 @@ global <- left_join(global, sentimentr_2018_df, by = "region")
 # remove temporal objects
 rm(european_countries, ind_eur)
 
+# Save map data including sentiments in case one requires them later 
+#save(global, file = "global.Rda")
+
+# The files required for runnig the shiny app can be uploded using the following lines
+load("list_2012_cleaned.Rda")
+load("list_2012_cleaned_full.Rda")
+load("list_2015_cleaned.Rda")
+load("list_2015_cleaned_full.Rda")
+load("list_2018_cleaned.Rda")
+load("list_2018_cleaned_full.Rda")
+load("NRC_2012.Rda")
+load("NRC_2015.Rda")
+load("NRC_2018.Rda")
+load("minqing_2012.Rda")
+load("minqing_2015.Rda")
+load("minqing_2018.Rda")
+load("sentimentr_2012.Rda")
+load("sentimentr_2015.Rda")
+load("sentimentr_2018.Rda")
+load("global.Rda")
+
+
 # --------------------
 # Section 5: Shiny App
 # --------------------
@@ -504,8 +525,12 @@ rm(european_countries, ind_eur)
 # To better visualize the App it is reconmended to select the option
 # "Run External" next to the button called "Run App", then run the following line:
 
-
 # Run App in the default browser
 shiny::runApp()
+
+# change the following line to your desired browser (in this case chrome)
+chrome <- "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe"
+options(browser = chrome)
+shiny::runApp("./", launch.browser = TRUE)
 
 
