@@ -20,10 +20,12 @@ shinyUI(
         box(title = "Sentiment Map",
             status = "primary",
             solidHeader = TRUE,
+            align = "center",
             ggiraphOutput("map")),
         box(title = "Country Wordcloud",
             status = "primary",
             solidHeader = TRUE, 
+            align = "center",
             wordcloud2Output("wordcloud"))
         )
       )
