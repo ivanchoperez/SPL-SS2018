@@ -17,8 +17,16 @@ shinyUI(
   ),
   dashboardBody(
     fluidRow(
-      box(ggiraphOutput("map")),
-      box(wordcloud2Output("wordcloud"))
+      box(title = "Sentiment Map",
+          status = "primary",
+          solidHeader = TRUE,
+        
+          ggiraphOutput("map")),
+      box(title = "Country Wordcloud",
+          status = "primary",
+          
+          solidHeader = TRUE, 
+          wordcloud2Output("wordcloud"))
     )
   )
   )
