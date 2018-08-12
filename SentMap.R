@@ -1,15 +1,13 @@
 # Change the following path to the desired one in your computer
 setwd("~/Ivan/MSc Statistics/SPL/Project/Code 16-07-2018/Data")
 
-# In line 495 all the revelant objects can be uploaded if needed
-
 # The code is divided in the following sections:
-#   Section 0: Packages installation (codeline 15)
-#   Section 1: Data loading (codeline 33)
-#   Section 2: Text cleaning (codeline 84)
-#   Section 3: Sentiment Analysis (codeline 231)
-#   Section 4: Interactive Map (codeline 404)
-#   Section 5: Shiny app (codeline 515)
+#   Section 0: Packages installation (codeline 13)
+#   Section 1: Data loading (codeline 31)
+#   Section 2: Text cleaning (codeline 85)
+#   Section 3: Sentiment Analysis (codeline 223)
+#   Section 4: Interactive Map (codeline 407)
+#   Section 5: Shiny app (codeline 496)
 
 # -------------------------------
 # Section 0: Package Installation
@@ -59,6 +57,7 @@ for (i in 1:length(countries_2012)){
   list_2012[[countries_2012[i]]] <- paste(
     readLines(paste0(countries_2012[i],"_","2012",".txt")), 
                                           collapse = " ")
+  Encoding(list_2012[[i]]) = "UTF-8"
 }
 
 list_2015 = list()
@@ -67,6 +66,7 @@ for (i in 1:length(countries_2015)){
   list_2015[[countries_2015[i]]] <- paste(
     readLines(paste0(countries_2015[i],"_","2015",".txt")),
                                            collapse = " ")
+  Encoding(list_2015[[i]]) = "UTF-8"
 }
 
 list_2018 = list()
@@ -75,6 +75,7 @@ for (i in 1:length(countries_2018)){
   list_2018[[countries_2018[i]]] <- paste(
     readLines(paste0(countries_2018[i],"_","2018",".txt"))
                                           , collapse = " ")
+  Encoding(list_2018[[i]]) = "UTF-8"
 }
 
 # remove temporal objects
@@ -218,21 +219,12 @@ for (i in 1:length(list_2018)){
 # remove temporal objects
 rm(i)
 
-# Save cleaned text in case one requires them later 
-# save(list_2012_cleaned, file = "list_2012_cleaned.Rda")
-# save(list_2012_cleaned_full, file = "list_2012_cleaned_full.Rda")
-# save(list_2015_cleaned, file = "list_2015_cleaned.Rda")
-# save(list_2015_cleaned_full, file = "list_2015_cleaned_full.Rda")
-# save(list_2018_cleaned, file = "list_2018_cleaned.Rda")
-# save(list_2018_cleaned_full, file = "list_2018_cleaned_full.Rda")
-
-
 # -----------------------------
 # Section 3: Sentiment Analysis
 # -----------------------------
 
 # Running the Whole section will take about 20 mins (8GB Ram).
-# You can skip the process and upload the data directly by going to line 495 instead
+# You can skip the process and upload the data directly by going to line 395 instead
 
 # 1) NRC dictionary 
 # for more details: http://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm)
@@ -400,12 +392,23 @@ for (i in 1:length(list_2018_cleaned_full)){
 # remove temporal objects
 rm(NRC, i, negwords, poswords, score, sent)
 
+#Load Sentiment Analysis data
+load("NRC_2012.Rda")
+load("NRC_2015.Rda")
+load("NRC_2018.Rda")
+load("minqing_2012.Rda")
+load("minqing_2015.Rda")
+load("minqing_2018.Rda")
+load("sentimentr_2012.Rda")
+load("sentimentr_2015.Rda")
+load("sentimentr_2018.Rda")
+
 # --------------------------
 # Section 4: Interactive Map
 # --------------------------
 
 # This section only presents the assignation of the Sentiment Analysis data
-# to the Map data. Details on how the map is graphed will be discussed in next
+# to the Map data. Details on how the map is built will be discussed in next
 # section
 
 # Convert dictionary lists into data frames
@@ -488,28 +491,6 @@ global <- left_join(global, sentimentr_2018_df, by = "region")
 
 # remove temporal objects
 rm(european_countries, ind_eur)
-
-# Save map data including sentiments in case one requires them later 
-#save(global, file = "global.Rda")
-
-# The files required for runnig the shiny app can be uploded using the following lines
-load("list_2012_cleaned.Rda")
-load("list_2012_cleaned_full.Rda")
-load("list_2015_cleaned.Rda")
-load("list_2015_cleaned_full.Rda")
-load("list_2018_cleaned.Rda")
-load("list_2018_cleaned_full.Rda")
-load("NRC_2012.Rda")
-load("NRC_2015.Rda")
-load("NRC_2018.Rda")
-load("minqing_2012.Rda")
-load("minqing_2015.Rda")
-load("minqing_2018.Rda")
-load("sentimentr_2012.Rda")
-load("sentimentr_2015.Rda")
-load("sentimentr_2018.Rda")
-load("global.Rda")
-
 
 # --------------------
 # Section 5: Shiny App
